@@ -1,6 +1,7 @@
 export {default as Cart} from './Cart/Cart';
 export {default as Category} from './Category/Category';
 export {default as Footer} from './Footer/Footer';
+export {default as Newsletter} from './Footer/Newsletter/Newsletter'
 export {default as Header} from './Header/Header';
 export {default as Home} from './Home/Home';
 export {default as Products} from './Products/Products';
