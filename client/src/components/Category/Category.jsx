@@ -1,11 +1,19 @@
-import React from 'react'
+import React from "react";
+import Products from "../Products/Products";
 
-import './Category.scss'
+import "./Category.scss";
+
 
 const Category = () => {
   return (
-    <div>Category</div>
-  )
-}
+    <div className="category-main-content">
+      
+      <div className="layout">
+		<div className="category-title">Earbuds</div>
+        <Products innerPage={true}/>
+      </div>
+    </div>
+  );
+};
 
-export default Category
+export default Category;
