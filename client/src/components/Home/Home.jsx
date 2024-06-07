@@ -12,7 +12,7 @@ const Home = () => {
       <div className="main-content">
         <div className="layout">
           <Category />
-          <Products />
+          <Products title="Popular Products"/>
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@ const Category = () => {
       
       <div className="layout">
 		<div className="category-title">Earbuds</div>
-        <Products innerPage={true}/>
+        <Products innerPageTitle={true}/>
       </div>
     </div>
   );

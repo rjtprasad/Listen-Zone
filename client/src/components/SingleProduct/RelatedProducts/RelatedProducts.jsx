@@ -1,10 +1,12 @@
 import React from 'react'
-
+import Products from '../../Products/Products'
 import './RelatedProducts.scss'
 
 const RelatedProducts = () => {
   return (
-    <div>RelatedProducts</div>
+    <div className='related-products'>
+      <Products title="Similar Products"/>
+    </div>
   )
 }
 
