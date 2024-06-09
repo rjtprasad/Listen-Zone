@@ -3,11 +3,13 @@ import { useNavigate } from "react-router-dom";
 import { TbSearch } from "react-icons/tb";
 import { CgShoppingCart } from "react-icons/cg";
 import { AiOutlineHeart } from "react-icons/ai";
+import Cart from "../Cart/Cart";
 
 import "./Header.scss";
 
 const Header = () => {
   const [scroll, setScroll] = useState(false);
+  const [showCart, setShowCart] = useState(false)
   const navigate = useNavigate();
 
   const handleScroll = () => {
@@ -24,6 +26,8 @@ const Header = () => {
   }, []);
 
   return (
+    <>
+    
     <header className={`main-header ${scroll ? 'sticky-header' : ''}`}>
       <div className="header-content">
         <ul className="left">
@@ -37,13 +41,15 @@ const Header = () => {
         <div className="right">
           <TbSearch />
           <AiOutlineHeart />
-          <div className="cart-icon">
+          <div className="cart-icon" onClick={()=>setShowCart(true)}>
             <CgShoppingCart />
             <span>5</span>
           </div>
         </div>
       </div>
     </header>
+    {showCart && <Cart setShowCart={setShowCart}/>}
+    </>
   );
 };
 
